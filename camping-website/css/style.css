@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #faf4f1;
+}
+
+.header {
+    background-color: #f7e1db;
+    padding: 10px 30px;
+
+}
+
+.clear {
+    /* nếu dùng float thì phải dùng clear */
+    clear: both;
+    height: 0;
+}
+
+.header .nav-bar {
+    margin-top: 10px;
+}
+
+.header .logo img {
+    width: 70px;
+}
+
+.header .nav-bar a {
+    text-decoration: none;
+    color: #000;
+    margin: 20px;
+    
+}
+.header .nav-bar a:hover {
+    color: #f00;
+    
+}
+
+.carousel {
+    background-image: url(/img/BG.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.activity {
+    padding: 70px 0;
+}
+.activity .main {
+    text-align: center;
+}
+
+.activity .title {
+    text-align: center;
+}
+.activity .title h1{
+    text-align: center;
+    color: #8d8d8d;
+}
+
+.activity .main .col{
+    float:left;
+    width: 25%;
+    padding: 0px 10px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin: 5px 0px;
+}
+.item {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+.thumnail {
+    position: relative;
+}
+
+.thumnail img {
+    width: 100%;
+    border-radius: 10px;
+    /* position: absolute; */
+}
+
+.thumnail i{
+    font-size: 20px;
+    /* relative di chuyển dựa trên vị trí hiện tại của thẻ*/
+    /* absolute di chuyển dựa vào lề của thẻ cha */
+    /*muốn dinh dạng thẻ cha của absolute thì định dạng thẻ cha có position relative */
+    /* fixed cha se la body va fix cứng vị trí */
+    position: absolute;
+    top:20px;
+    right: 20px;
+    background-color: rgba(255,255,255,0.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.item p{
+    color: #8d8d8d;
+    line-height: 25px;
+    /* margin-bottom: 20px; */
+}
+
+.item a{
+    background-color: #e8e8e8;
+    line-height: 25px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+
+.main .btn-view-all {
+    color: #e76f51;
+    /* display: inline-block; */
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid #e76f51;
+    /* margin-left: 50%;  */
+    margin-top: 30px
+    
+} 
+
+.contact {
+    width: 100%;
+    height: auto;
+}
+
+
+.contact-row {
+    width: 100%;
+    /* background-color: #f7e1db; */
+   
+   
+}
+.contact-col {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+
+
+.contact-col .contact-item-left {
+    background-image: url(../img/mask.png) ;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+}
+.contact-item-left img {
+    margin-left: 100px;
+} 
+
+.contact-col  .contact-item-right {
+   line-height: 20px;
+   color: #a49f9e;
+   margin: 20px 5px;
+   /* float:left; */
+   box-sizing: border-box;
+   width: 100%;
+}
+
+.contact-item-right{
+    /* float:left; */
+    /* width: 100%; */
+    
+}
+
+.contact-item-right-footer {
+    width: 100%;
+    line-height: 50px;
+}
+
+.contact-item-right-footer .contact-item-right-footer-col{
+    float:left;
+    width: 50%;
+}
+
+.contact-item-right h1{
+    margin: 10px 5px;
+}
+
+.contact-item-right-footer  .app-area {
+    /* float:left; */
+    /* width: 70%; */
+}
+.contact-item-right-footer  .app-area h1{
+   font-size: 20px;
+   /* width: 70%; */
+   
+}
+
+.contact-item-right-footer-col  .app-area i{
+    font-size: 30px;
+    /* width: 70%; */
+    
+ }
+
+.contact-item-right-footer  .media {
+    width: 30%;
+}
+
+
+.footer {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    /* f7e1db */
+
+}
+
+
+.footer .footer-row {
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 30px;
+    background-color: #f7e1db;
+  
+}
+
+.footer-row .footer-col {
+    float: left;
+    width: 25%;
+    /* margin-left: 5px; */
+    box-sizing: border-box;
+    
+}
+.footer-col .footer-item {
+    padding: 25px;
+}
+
+.footer-row .footer-item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+}
+
+.footer-end p {
+    text-align: center;
+}
